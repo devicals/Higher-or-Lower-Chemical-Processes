@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher or Lower: Chemical Processes</title>
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/devicals/devicals.github.io/refs/heads/main/assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <h1>Higher or Lower: Chemical Processes</h1>
+
+    <div id="game-container">
+        <div class="game-board">
+            <div class="equation" id="equation"></div>
+            <div class="card-area">
+                <div class="card" id="condition-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Condition</h2>
+                        </div>
+                        <div class="card-back">
+                            <p id="condition-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="change-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h2>Change</h2>
+                        </div>
+                        <div class="card-back">
+                            <p id="change-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="higher-btn" style="font-family: monospace">Higher Yield</button>
+                <button id="lower-btn" style="font-family: monospace">Lower Yield</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+        <div id="score">Score: <span id="score-value">0</span> | Correct: <span id="correct-value">0</span> | Incorrect: <span id="incorrect-value">0</span></div>
+        <button id="reset-button">Reset Game</button>
+    </div>
+
+
+    <!-- Popup -->
+    <div id="popup" class="hidden">
+        <div id="popup-content">
+            <span id="close-popup">&times;</span>
+            <h2>Result</h2>
+            <p id="popup-message"></p>
+        </div>
+    </div>
+
+    <!-- Info Popup -->
+    <div id="info-popup" class="hidden">
+        <div id="info-popup-content">
+            <span id="close-info-popup">&times;</span>
+            <h3>How to Play</h3>
+            <p>Select whether the yield of the product will increase or decrease based on the given condition and change.  The two chemical reactions are: Haber Process and Contact Process</p>
+        </div>
+    </div>
+        <div id="info-button"><span>i</span></div>
+    <script src="script.js"></script>
+    <footer>
+        <p>Created by Error Dev</p>
+    </footer>
+</body>
+</html>
